@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 90%;
+    margin: auto;
+}
+.btn{   
+    text-decoration: none;
+    color: $btnText;
+    background-color: $btnColor; 
+    padding: 15px 30px;
+    margin-top: 30px;    
+    border-radius: 5px; 
+    &:hover{
+        background-color: $btnHoverColor;
+    }  
+}

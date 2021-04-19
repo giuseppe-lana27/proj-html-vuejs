@@ -18,47 +18,62 @@
 <body>
     <div id="app">
         <!-- intestazione della pagina -->        
-    <header>
-        <div class="header-top">
-            <!-- Logo -->
-        <div class="logo">
-            <img src="img/dark-logo.png" alt="MaxCoach Logo">
-        </div>
-        <!-- /Logo -->
-        <!-- Navigazione principale -->
-        <div class="main-nav">
-            <ul>
-                <li v-for="item in navLinks">
-                    <a href="#">{{item.name}}</a><i class="fas fa-chevron-down"></i>
-                </li>                              
-            </ul>
-        </div>
-        <!-- /Navigazione principale -->
-        <!-- ricerca e login -->
-        <div class="search">
-            <div class="language">
-                <img src="img/en.png" alt="Language">
-                <span class="lang-selected">English</span>
-                <i class="fas fa-chevron-down"></i>
-            </div>
-            <div class="log-in">
-                <i class="far fa-user-circle"></i>
-            </div>
-            <div class="search-bar">
-                <input type="text" placeholder="Search...">
-                <i class="fas fa-search"></i>
-            </div>
-        </div>
-        <!-- /ricerca e login -->    
-        </div>            
-    </header>
-    <!-- /intestazione della pagina -->
-    <!-- corpo della pagina -->
-    <main></main>
-    <!-- /corpo della pagina -->
-    <!-- footer -->
-    <footer></footer>
-    <!-- /footer -->
+        <header>
+            <div class="container">
+                <div class="header-top">
+                    <!-- Logo -->
+                    <div class="logo">
+                        <img src="img/dark-logo.png" alt="MaxCoach Logo">
+                    </div>
+                    <!-- /Logo -->
+                    <!-- Navigazione principale -->
+                    <div class="main-nav">
+                        <ul>
+                            <li v-for="item in navLinks">
+                                <a href="#">{{item.name}}</a><i class="fas fa-chevron-down"></i>
+                            </li>                              
+                        </ul>
+                    </div>
+                    <!-- /Navigazione principale -->
+                    <!-- ricerca e login -->
+                    <div class="search">
+                        <div class="language">
+                            <img src="img/en.png" alt="Language">
+                            <span class="lang-selected">English</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="log-in">
+                            <i class="far fa-user-circle"></i>
+                        </div>
+                        <div class="search-bar">
+                            <input type="text" placeholder="Search...">
+                            <i class="fas fa-search"></i>
+                        </div>
+                    </div>
+                    <!-- /ricerca e login -->    
+                </div>
+                <div class="header-bottom">                   
+                    <div class="hero">
+                        <div class="hero-description">
+                            <h3>New Challenges, New Skills</h3>
+                            <h1>Build your own life coaching business</h1>
+                            <p>Whole-Life Business Coaching from committed entrepreneurs</p>
+                            <a href="#" class="btn">Get Started Today</a>
+                        </div>
+                        <div class="hero-img">
+                            <img src="img/home-business-hero-avatar.png" alt="">
+                        </div>
+                    </div>
+                </div> 
+            </div>                       
+        </header>
+        <!-- /intestazione della pagina -->
+        <!-- corpo della pagina -->
+        <main></main>
+        <!-- /corpo della pagina -->
+        <!-- footer -->
+        <footer></footer>
+        <!-- /footer -->
     </div>    
     <!-- script -->    
     <script src="js/script.js"></script>
