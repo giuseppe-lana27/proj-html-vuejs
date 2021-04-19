@@ -66,19 +66,19 @@
     }
 }
 // header bottom con hero
-.header-bottom{      
-    padding: 60px;
+.header-bottom{     
+    width: 90%;
+    margin: auto;    
     background-image: url('../img/home-business-hero-global-image.png');        
     background-repeat: no-repeat;
     background-position: right;
     .hero{
-        width: 100%;
-        
+        width: 100%;        
         display: flex;
         justify-content: space-between;  
         padding: 50px;      
         .hero-description{
-            width: 35%;
+            width: 45%;
             padding: 20px;
             margin-right: 40px;
             align-self: center;
@@ -98,7 +98,7 @@
             }            
         }
         .hero-img{
-            width: 60%;
+            width: 55%;
             text-align: right;
         }                 
     }

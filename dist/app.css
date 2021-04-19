@@ -65,7 +65,8 @@
 }
 
 .header-bottom {
-  padding: 60px;
+  width: 90%;
+  margin: auto;
   background-image: url("../img/home-business-hero-global-image.png");
   background-repeat: no-repeat;
   background-position: right;
@@ -77,7 +78,7 @@
   padding: 50px;
 }
 .header-bottom .hero .hero-description {
-  width: 35%;
+  width: 45%;
   padding: 20px;
   margin-right: 40px;
   align-self: center;
@@ -97,7 +98,7 @@
   margin-bottom: 35px;
 }
 .header-bottom .hero .hero-img {
-  width: 60%;
+  width: 55%;
   text-align: right;
 }
 
