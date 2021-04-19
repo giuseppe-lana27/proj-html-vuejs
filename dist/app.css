@@ -170,7 +170,7 @@ body {
 }
 .dream-section .dream-tasks .task {
   width: calc((100% / 3) - 15px);
-  margin-right: 15px;
+  margin-right: 20px;
 }
 .dream-section .dream-tasks .task h3 {
   color: #282935;
@@ -184,4 +184,33 @@ body {
 .dream-section .tasks-buttons {
   display: flex;
   justify-content: center;
+}
+
+.explore-section .carousel-title {
+  text-align: center;
+  font-size: 40px;
+  margin-top: 20px;
+}
+.explore-section .explore-carousel {
+  width: 80%;
+  margin: 30px auto;
+  display: flex;
+}
+.explore-section .explore-carousel .carousel-card {
+  width: calc(100% / 3);
+  height: 450px;
+  text-align: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-right: 15px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.explore-section .explore-carousel .carousel-card img {
+  width: 100%;
+}
+.explore-section .explore-carousel .carousel-card h3 {
+  margin: 20px 0;
+}
+.explore-section .explore-carousel .carousel-card p {
+  margin: 20px 0;
 }
