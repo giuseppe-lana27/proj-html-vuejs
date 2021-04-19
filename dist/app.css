@@ -1,3 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+}
+
+.btn {
+  text-decoration: none;
+  color: #fefefe;
+  background-color: #1eae96;
+  padding: 15px 30px;
+  margin-top: 30px;
+  border-radius: 5px;
+}
+.btn:hover {
+  background-color: #343142;
+}
+
+.section-title {
+  font-size: 28px;
+  color: #1eae96;
+  font-weight: 400;
+  text-align: center;
+}
+
 .header-top {
   display: flex;
   align-items: center;
@@ -102,25 +136,35 @@
   text-align: right;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+.dream-section {
+  padding: 40px;
 }
-
-.container {
-  width: 90%;
-  margin: auto;
+.dream-section .dream-description {
+  width: 50%;
+  margin: 25px auto;
+  text-align: center;
 }
-
-.btn {
-  text-decoration: none;
-  color: #fefefe;
-  background-color: #1eae96;
-  padding: 15px 30px;
-  margin-top: 30px;
-  border-radius: 5px;
+.dream-section .dream-description p {
+  font-size: 30px;
+  line-height: 1.5;
+  font-weight: 600;
 }
-.btn:hover {
-  background-color: #343142;
+.dream-section .dream-tasks {
+  display: flex;
+  flex-wrap: wrap;
+  width: 60%;
+  margin: 40px auto;
+}
+.dream-section .dream-tasks .task {
+  width: calc((100% / 3) - 15px);
+  margin-right: 15px;
+}
+.dream-section .dream-tasks .task h3 {
+  color: #282935;
+}
+.dream-section .dream-tasks .task p {
+  font-size: 15px;
+  margin-top: 15px;
+  color: #797979;
+  line-height: 1.5;
 }

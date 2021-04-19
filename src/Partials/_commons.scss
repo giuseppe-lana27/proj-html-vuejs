@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    font-family: 'Roboto', sans-serif;
+}
 .container{
     width: 90%;
     margin: auto;
@@ -17,4 +20,10 @@
     &:hover{
         background-color: $btnHoverColor;
     }  
+}
+.section-title{
+    font-size: 28px;
+    color: $mainColor;
+    font-weight: 400;
+    text-align: center;
 }
