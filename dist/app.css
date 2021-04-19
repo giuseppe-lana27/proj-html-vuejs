@@ -1,1 +1,62 @@
+.header-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 
+.logo {
+  margin-left: 40px;
+  height: 30px;
+}
+.logo img {
+  height: 100%;
+}
+
+.main-nav ul {
+  list-style: none;
+}
+.main-nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+.main-nav ul a {
+  text-decoration: none;
+  color: #343142;
+  font-size: 20px;
+  vertical-align: middle;
+}
+.main-nav ul i {
+  margin-left: 5px;
+  vertical-align: middle;
+}
+
+.search {
+  display: flex;
+}
+.search .language {
+  margin-right: 40px;
+}
+.search .language img {
+  vertical-align: middle;
+}
+.search .language .lang-selected {
+  vertical-align: middle;
+  text-transform: uppercase;
+}
+.search .language i {
+  vertical-align: middle;
+}
+.search .log-in {
+  margin-right: 40px;
+  font-size: 22px;
+}
+.search .search-bar {
+  margin-right: 40px;
+}
+.search .search-bar input {
+  border: none;
+  vertical-align: middle;
+}
+.search .search-bar i {
+  vertical-align: middle;
+}
