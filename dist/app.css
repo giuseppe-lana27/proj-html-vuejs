@@ -169,7 +169,7 @@ body {
   margin: 40px auto;
 }
 .dream-section .dream-tasks .task {
-  width: calc((100% / 3) - 15px);
+  width: calc((100% / 3) - 20px);
   margin-right: 20px;
 }
 .dream-section .dream-tasks .task h3 {
@@ -186,6 +186,9 @@ body {
   justify-content: center;
 }
 
+.explore-section {
+  padding: 30px;
+}
 .explore-section .carousel-title {
   text-align: center;
   font-size: 40px;
@@ -201,7 +204,7 @@ body {
   height: 450px;
   text-align: center;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  margin-right: 15px;
+  margin-right: 20px;
   border-radius: 5px;
   overflow: hidden;
 }
