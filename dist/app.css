@@ -32,6 +32,19 @@ body {
   text-align: center;
 }
 
+.wht-btn {
+  text-decoration: none;
+  color: #1eae96;
+  margin-right: 25px;
+  padding: 15px 30px;
+  margin-top: 30px;
+  border-radius: 5px;
+}
+.wht-btn:hover {
+  background-color: #343142;
+  color: #fefefe;
+}
+
 .header-top {
   display: flex;
   align-items: center;
@@ -167,4 +180,8 @@ body {
   margin-top: 15px;
   color: #797979;
   line-height: 1.5;
+}
+.dream-section .tasks-buttons {
+  display: flex;
+  justify-content: center;
 }

@@ -27,6 +27,10 @@
                 color: $paragraph_color;
                 line-height: 1.5;
             }
-        }
+        }        
+    }
+    .tasks-buttons{
+        display: flex;
+        justify-content: center;        
     }
 }

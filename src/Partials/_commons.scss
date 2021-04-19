@@ -27,3 +27,15 @@ body{
     font-weight: 400;
     text-align: center;
 }
+.wht-btn{
+    text-decoration: none;
+    color: $mainColor;
+    margin-right: 25px;
+    padding: 15px 30px;
+    margin-top: 30px;    
+    border-radius: 5px; 
+    &:hover{
+        background-color: $btnHoverColor;
+        color: $btnText;
+    }
+}
