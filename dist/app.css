@@ -18,7 +18,7 @@ body {
   color: #fefefe;
   background-color: #1eae96;
   padding: 15px 30px;
-  margin-top: 30px;
+  margin-left: 20px;
   border-radius: 5px;
 }
 .btn:hover {
@@ -35,9 +35,7 @@ body {
 .wht-btn {
   text-decoration: none;
   color: #1eae96;
-  margin-right: 25px;
   padding: 15px 30px;
-  margin-top: 30px;
   border-radius: 5px;
 }
 .wht-btn:hover {
@@ -136,7 +134,7 @@ body {
 }
 .header-bottom .hero .hero-description h1 {
   text-transform: uppercase;
-  font-size: 46px;
+  font-size: 52px;
   margin: 25px 0;
 }
 .header-bottom .hero .hero-description p {
@@ -184,24 +182,26 @@ body {
 .dream-section .tasks-buttons {
   display: flex;
   justify-content: center;
+  margin-top: 60px;
 }
 
 .explore-section {
-  padding: 30px;
+  padding: 50px;
 }
-.explore-section .carousel-title {
+.explore-section .main-section-title {
   text-align: center;
   font-size: 40px;
   margin-top: 20px;
 }
 .explore-section .explore-carousel {
   width: 80%;
-  margin: 30px auto;
+  margin: 40px auto;
   display: flex;
+  padding: 15px;
 }
 .explore-section .explore-carousel .carousel-card {
-  width: calc(100% / 3);
-  height: 450px;
+  width: calc((100% / 3) - 20px);
+  height: 500px;
   text-align: center;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   margin-right: 20px;
@@ -215,5 +215,54 @@ body {
   margin: 20px 0;
 }
 .explore-section .explore-carousel .carousel-card p {
-  margin: 20px 0;
+  margin: 30px 0;
+  padding: 8px;
+  line-height: 2;
+  color: #797979;
+}
+.explore-section .explore-carousel .carousel-card .wht-btn:hover {
+  color: #fefefe;
+  background-color: #1eae96;
+}
+.explore-section .explore-carousel .carousel-card i {
+  vertical-align: middle;
+  margin-left: 5px;
+  font-size: 20px;
+}
+
+.pricing-section {
+  padding: 50px;
+}
+.pricing-section .main-section-title {
+  text-align: center;
+  font-size: 40px;
+  margin-top: 20px;
+}
+.pricing-section .pricing-courses {
+  width: 90%;
+  margin: 40px auto;
+  display: flex;
+  padding: 15px;
+}
+.pricing-section .pricing-courses .pricing-card {
+  width: calc((100% / 4) - 20px);
+  height: 450px;
+  background-color: red;
+  margin-right: 20px;
+  padding: 20px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: relative;
+}
+.pricing-section .pricing-courses .pricing-card .course-price {
+  color: #eceeef;
+}
+.pricing-section .pricing-courses .pricing-card .course-price .price {
+  font-size: 22px;
+}
+.pricing-section .pricing-courses .pricing-card .course-description {
+  position: absolute;
+  top: 100%;
 }

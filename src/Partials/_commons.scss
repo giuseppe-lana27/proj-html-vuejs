@@ -15,7 +15,7 @@ body{
     color: $btnText;
     background-color: $btnColor; 
     padding: 15px 30px;
-    margin-top: 30px;    
+    margin-left: 20px;    
     border-radius: 5px; 
     &:hover{
         background-color: $btnHoverColor;
@@ -29,10 +29,8 @@ body{
 }
 .wht-btn{
     text-decoration: none;
-    color: $mainColor;
-    margin-right: 25px;
-    padding: 15px 30px;
-    margin-top: 30px;    
+    color: $mainColor;    
+    padding: 15px 30px;   
     border-radius: 5px; 
     &:hover{
         background-color: $btnHoverColor;

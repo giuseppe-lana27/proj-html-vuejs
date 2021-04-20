@@ -32,22 +32,24 @@
     .tasks-buttons{
         display: flex;
         justify-content: center;        
+        margin-top: 60px;
     }
 }
 .explore-section{
-    padding: 30px;
-    .carousel-title{
+    padding: 50px;
+    .main-section-title{
         text-align: center;
         font-size: 40px;
         margin-top: 20px;
     }
     .explore-carousel{
         width: 80%;
-        margin: 30px auto;
+        margin: 40px auto;
         display: flex;
+        padding: 15px;
         .carousel-card{
-            width: calc(100% / 3);
-            height: 450px;
+            width: calc((100% / 3) - 20px);
+            height: 500px;
             text-align: center;
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
             margin-right: 20px;
@@ -60,8 +62,57 @@
                 margin: 20px 0;
             }
             p{
-                margin: 20px 0;
+                margin: 30px 0;
+                padding: 8px;
+                line-height: 2;
+                color: $paragraph_color;
+            }
+            .wht-btn:hover{
+                color: $btnText;
+                background-color: $btnColor;
+            }
+            i{
+                vertical-align: middle;
+                margin-left: 5px;
+                font-size: 20px;
             }        
         }
+    }
+}
+.pricing-section{
+    padding: 50px;
+    .main-section-title{
+        text-align: center;
+        font-size: 40px;
+        margin-top: 20px;
+    }
+    .pricing-courses{
+        width: 90%;
+        margin: 40px auto;
+        display: flex;
+        padding: 15px;
+        .pricing-card{
+            width: calc((100% / 4) - 20px);
+            height: 450px;
+            background-color: red;
+            margin-right: 20px;
+            padding: 20px;
+            border-radius: 5px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            position: relative;
+            .course-price{
+                color: $pricingColor;
+                .price{
+                    font-size: 22px;
+                }
+            }
+            .course-description{
+                position: absolute;
+                top: 100%;
+            }
+        }
+        
     }
 }
