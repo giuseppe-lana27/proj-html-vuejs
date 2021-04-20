@@ -187,6 +187,7 @@ body {
 
 .explore-section {
   padding: 50px;
+  background-color: #f8f8f8;
 }
 .explore-section .main-section-title {
   text-align: center;
@@ -204,6 +205,7 @@ body {
   height: 500px;
   text-align: center;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: #fefefe;
   margin-right: 20px;
   border-radius: 5px;
   overflow: hidden;
@@ -253,6 +255,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  background-size: cover;
   position: relative;
 }
 .pricing-section .pricing-courses .pricing-card .course-price {
@@ -271,21 +274,51 @@ body {
 }
 .pricing-section .pricing-courses .card-one {
   background-image: url("../img/course-02-443x600.jpg");
-  background-size: cover;
-  background-color: rgba(0, 0, 0, 0.8);
 }
 .pricing-section .pricing-courses .card-two {
   background-image: url("../img/stock-full-hd-03-443x600.jpg");
-  background-size: cover;
-  background-color: rgba(0, 0, 0, 0.8);
 }
 .pricing-section .pricing-courses .card-three {
   background-image: url("../img/stock-full-hd-04-443x600.jpg");
-  background-size: cover;
-  background-color: rgba(0, 0, 0, 0.8);
 }
 .pricing-section .pricing-courses .card-four {
   background-image: url("../img/stock-full-hd-06-443x600.jpg");
-  background-size: cover;
-  background-color: rgba(0, 0, 0, 0.8);
+}
+.pricing-section .pricing-bottom {
+  width: 35%;
+  margin: auto;
+  text-align: center;
+}
+.pricing-section .pricing-bottom p {
+  color: #797979;
+}
+.pricing-section .pricing-bottom p a {
+  color: #282935;
+  vertical-align: middle;
+  text-decoration: none;
+  border-bottom: 1px solid #bcbcbc;
+}
+.pricing-section .pricing-bottom p a i {
+  vertical-align: middle;
+}
+
+.video-section {
+  height: 500px;
+  background-color: #282935;
+  background-image: url("../img/background-map-dots-top-right-transparent.png");
+  background-repeat: no-repeat;
+  background-position: right;
+  display: flex;
+  align-items: center;
+  padding: 40px;
+}
+.video-section .video {
+  width: 50%;
+  position: relative;
+}
+.video-section .video .youtube-play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }

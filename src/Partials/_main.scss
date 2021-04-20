@@ -35,8 +35,9 @@
         margin-top: 60px;
     }
 }
-.explore-section{
+.explore-section{    
     padding: 50px;
+    background-color: $exploreBackground-color;
     .main-section-title{
         text-align: center;
         font-size: 40px;
@@ -52,6 +53,7 @@
             height: 500px;
             text-align: center;
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            background-color: $carouselCard-bgColor;
             margin-right: 20px;
             border-radius: 5px;
             overflow: hidden;
@@ -91,6 +93,7 @@
         margin: 40px auto;
         display: flex;
         padding: 15px;
+        
         .pricing-card{
             width: calc((100% / 4) - 20px);
             height: 450px;
@@ -100,7 +103,8 @@
             display: flex;
             flex-direction: column;
             justify-content: flex-end;
-            position: relative;
+            background-size: cover;
+            position: relative;                       
             .course-price{
                 color: $pricingColor;
                 span{
@@ -114,29 +118,56 @@
                 h3{
                     margin-top: 6px;
                 }
-            }
-            
+            }            
         }
         .card-one{
-            background-image: url('../img/course-02-443x600.jpg');
-            background-size: cover;
-            background-color: rgba(0, 0, 0, 0.8);            
+            background-image: url('../img/course-02-443x600.jpg');            
         }
         .card-two{
             background-image: url('../img/stock-full-hd-03-443x600.jpg');
-            background-size: cover;
-            background-color: rgba(0, 0, 0, 0.8);    
         }
         .card-three{
             background-image: url('../img/stock-full-hd-04-443x600.jpg');
-            background-size: cover;
-            background-color: rgba(0, 0, 0, 0.8);  
         }
         .card-four{
             background-image: url('../img/stock-full-hd-06-443x600.jpg');
-            background-size: cover;
-            background-color: rgba(0, 0, 0, 0.8);  
+        }        
+    }
+    .pricing-bottom{
+        width: 35%;
+        margin: auto;
+        text-align: center;
+        p{
+            color: $paragraph_color;
+            a{
+                color: $takstitle_color;
+                vertical-align: middle;
+                text-decoration: none;
+                border-bottom: 1px solid $searchColor;
+                i{
+                    vertical-align: middle;
+                }
+            }
         }
-        
+    }
+}
+.video-section{
+    height: 500px;
+    background-color: $videosection-color;
+    background-image: url('../img/background-map-dots-top-right-transparent.png');
+    background-repeat: no-repeat;
+    background-position: right;
+    display: flex;
+    align-items: center;
+    padding: 40px;
+    .video{
+        width: 50%;
+        position: relative;
+        .youtube-play{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
     }
 }
