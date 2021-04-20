@@ -1,3 +1,4 @@
+// prima sezione
 .dream-section{   
     padding: 40px;
     .dream-description{
@@ -35,6 +36,7 @@
         margin-top: 60px;
     }
 }
+// seconda sezione
 .explore-section{    
     padding: 50px;
     background-color: $exploreBackground-color;
@@ -81,6 +83,7 @@
         }
     }
 }
+//terza sezione
 .pricing-section{
     padding: 50px;
     .main-section-title{
@@ -151,6 +154,7 @@
         }
     }
 }
+//quarta sezione
 .video-section{
     background-color: $videosection-color;
     background-image: url('../img/background-map-dots-top-right-transparent.png');
@@ -158,21 +162,27 @@
     background-position: right;
     display: flex;
     align-items: center;
+    justify-content: center;
     padding: 60px;
     .video{
         width: 50%;
-        border-radius: 10px;
-        position: relative;
-        img{            
-            overflow: hidden;
+        padding: 20px;
+        overflow: hidden;
+        .video-preview{
+            width: 90%;
+            position: relative;
             border-radius: 10px;
+            overflow: hidden;
+            img{
+                width: 100%;
+            }
+            .youtube-icon{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
         }
-        .youtube-play{
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);            
-        }             
     }
     .video-description{
         width: 50%;
@@ -214,3 +224,4 @@
         }
     }
 }
+// quinta sezione

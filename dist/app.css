@@ -309,18 +309,24 @@ body {
   background-position: right;
   display: flex;
   align-items: center;
+  justify-content: center;
   padding: 60px;
 }
 .video-section .video {
   width: 50%;
-  border-radius: 10px;
-  position: relative;
-}
-.video-section .video img {
+  padding: 20px;
   overflow: hidden;
-  border-radius: 10px;
 }
-.video-section .video .youtube-play {
+.video-section .video .video-preview {
+  width: 90%;
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.video-section .video .video-preview img {
+  width: 100%;
+}
+.video-section .video .video-preview .youtube-icon {
   position: absolute;
   top: 50%;
   left: 50%;
