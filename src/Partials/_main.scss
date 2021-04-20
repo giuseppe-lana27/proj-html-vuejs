@@ -94,9 +94,8 @@
         .pricing-card{
             width: calc((100% / 4) - 20px);
             height: 450px;
-            background-color: red;
             margin-right: 20px;
-            padding: 20px;
+            padding: 25px;
             border-radius: 5px;
             display: flex;
             flex-direction: column;
@@ -104,14 +103,39 @@
             position: relative;
             .course-price{
                 color: $pricingColor;
+                span{
+                    font-weight: 700;
+                    color: $mainColor;
+                    margin-bottom: 10px;
+                }
                 .price{
                     font-size: 22px;
                 }
+                h3{
+                    margin-top: 6px;
+                }
             }
-            .course-description{
-                position: absolute;
-                top: 100%;
-            }
+            
+        }
+        .card-one{
+            background-image: url('../img/course-02-443x600.jpg');
+            background-size: cover;
+            background-color: rgba(0, 0, 0, 0.8);            
+        }
+        .card-two{
+            background-image: url('../img/stock-full-hd-03-443x600.jpg');
+            background-size: cover;
+            background-color: rgba(0, 0, 0, 0.8);    
+        }
+        .card-three{
+            background-image: url('../img/stock-full-hd-04-443x600.jpg');
+            background-size: cover;
+            background-color: rgba(0, 0, 0, 0.8);  
+        }
+        .card-four{
+            background-image: url('../img/stock-full-hd-06-443x600.jpg');
+            background-size: cover;
+            background-color: rgba(0, 0, 0, 0.8);  
         }
         
     }
