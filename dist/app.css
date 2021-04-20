@@ -257,8 +257,19 @@ body {
   justify-content: flex-end;
   background-size: cover;
   position: relative;
+  overflow: hidden;
+}
+.pricing-section .pricing-courses .pricing-card .overlay {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 43%, #000 100%);
 }
 .pricing-section .pricing-courses .pricing-card .course-price {
+  position: absolute;
+  padding: 10px;
   color: #eceeef;
 }
 .pricing-section .pricing-courses .pricing-card .course-price span {

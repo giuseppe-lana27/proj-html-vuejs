@@ -60,7 +60,7 @@
             border-radius: 5px;
             overflow: hidden;
             img{
-                width: 100%;
+                width: 100%;                
             }
             h3{
                 margin: 20px 0;
@@ -107,9 +107,21 @@
             flex-direction: column;
             justify-content: flex-end;
             background-size: cover;
-            position: relative;                       
+            position: relative;
+            overflow: hidden;        
+            .overlay{
+                width: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 43%, #000 100%);
+            }                        
             .course-price{
+                position: absolute;
+                padding: 10px;
                 color: $pricingColor;
+                
                 span{
                     font-weight: 700;
                     color: $mainColor;
@@ -124,7 +136,7 @@
             }            
         }
         .card-one{
-            background-image: url('../img/course-02-443x600.jpg');            
+            background-image: url('../img/course-02-443x600.jpg');                                 
         }
         .card-two{
             background-image: url('../img/stock-full-hd-03-443x600.jpg');
