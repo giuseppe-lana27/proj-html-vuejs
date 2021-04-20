@@ -303,22 +303,65 @@ body {
 }
 
 .video-section {
-  height: 500px;
   background-color: #282935;
   background-image: url("../img/background-map-dots-top-right-transparent.png");
   background-repeat: no-repeat;
   background-position: right;
   display: flex;
   align-items: center;
-  padding: 40px;
+  padding: 60px;
 }
 .video-section .video {
   width: 50%;
+  border-radius: 10px;
   position: relative;
+}
+.video-section .video img {
+  overflow: hidden;
+  border-radius: 10px;
 }
 .video-section .video .youtube-play {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+.video-section .video-description {
+  width: 50%;
+}
+.video-section .video-description h2 {
+  color: #fff;
+  font-size: 70px;
+}
+.video-section .video-description .faqs {
+  margin: 20px 0;
+  padding: 15px;
+  border-bottom: 1px solid #fff;
+}
+.video-section .video-description .faqs .opened {
+  color: #1eae96;
+  font-size: 30px;
+  margin-right: 15px;
+}
+.video-section .video-description .faqs .active-title {
+  color: #1eae96;
+  display: inline-block;
+  font-size: 35px;
+}
+.video-section .video-description .faqs p {
+  padding: 20px;
+  color: #fff;
+  margin-left: 25px;
+  line-height: 1.8;
+  font-size: 20px;
+}
+.video-section .video-description .faqs i {
+  font-size: 30px;
+  color: #fff;
+  margin-right: 15px;
+}
+.video-section .video-description .faqs h3 {
+  display: inline-block;
+  font-size: 35px;
+  color: #fff;
 }
