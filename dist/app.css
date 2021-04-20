@@ -171,7 +171,9 @@ body {
   margin-right: 20px;
 }
 .dream-section .dream-tasks .task h3 {
+  display: inline-block;
   color: #282935;
+  margin-left: 20px;
 }
 .dream-section .dream-tasks .task p {
   font-size: 15px;
