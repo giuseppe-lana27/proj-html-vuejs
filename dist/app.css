@@ -257,7 +257,7 @@ ul {
 }
 .pricing-section .pricing-courses .pricing-card {
   width: calc((100% / 4) - 20px);
-  height: 450px;
+  height: 400px;
   margin-right: 20px;
   padding: 25px;
   border-radius: 5px;
@@ -278,19 +278,45 @@ ul {
 }
 .pricing-section .pricing-courses .pricing-card .course-price {
   position: absolute;
+  top: 73%;
+  left: 2%;
   padding: 10px;
   color: #eceeef;
 }
-.pricing-section .pricing-courses .pricing-card .course-price span {
+.pricing-section .pricing-courses .pricing-card .course-price .price-section span {
   font-weight: 700;
   color: #1eae96;
   margin-bottom: 10px;
 }
-.pricing-section .pricing-courses .pricing-card .course-price .price {
+.pricing-section .pricing-courses .pricing-card .course-price .price-section .price {
   font-size: 22px;
 }
-.pricing-section .pricing-courses .pricing-card .course-price h3 {
+.pricing-section .pricing-courses .pricing-card .course-price .price-section h3 {
   margin-top: 6px;
+}
+.pricing-section .pricing-courses .pricing-card .course-price .course-desc {
+  visibility: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  position: absolute;
+  top: 100%;
+  margin-top: 10px;
+  font-size: 15px;
+}
+.pricing-section .pricing-courses .pricing-card .course-price .course-desc .lessons {
+  margin-right: 15px;
+}
+.pricing-section .pricing-courses .pricing-card .course-price .course-desc .description {
+  margin-top: 15px;
+}
+.pricing-section .pricing-courses .pricing-card:hover {
+  cursor: pointer;
+}
+.pricing-section .pricing-courses .pricing-card:hover .course-price {
+  transform: translateY(-72%) translateY(-40px);
+}
+.pricing-section .pricing-courses .pricing-card:hover .course-desc {
+  visibility: visible;
 }
 .pricing-section .pricing-courses .card-one {
   background-image: url("../img/course-02-443x600.jpg");
@@ -561,7 +587,7 @@ ul {
 .maxcoach-love .sgommata {
   position: absolute;
   right: 0;
-  bottom: 100%;
+  bottom: 99%;
   z-index: -10;
   width: 60%;
 }

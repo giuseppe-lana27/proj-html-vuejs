@@ -100,11 +100,10 @@
         width: 90%;
         margin: 40px auto;
         display: flex;
-        padding: 15px;
-        
+        padding: 15px;        
         .pricing-card{
             width: calc((100% / 4) - 20px);
-            height: 450px;
+            height: 400px;
             margin-right: 20px;
             padding: 25px;
             border-radius: 5px;
@@ -113,7 +112,7 @@
             justify-content: flex-end;
             background-size: cover;
             position: relative;
-            overflow: hidden;        
+            overflow: hidden;
             .overlay{
                 width: 100%;
                 position: absolute;
@@ -124,21 +123,48 @@
             }                        
             .course-price{
                 position: absolute;
+                top: 73%;
+                left: 2%;
                 padding: 10px;
                 color: $pricingColor;
-                
-                span{
-                    font-weight: 700;
-                    color: $mainColor;
-                    margin-bottom: 10px;
+                .price-section{
+                    span{
+                        font-weight: 700;
+                        color: $mainColor;
+                        margin-bottom: 10px;
+                    }
+                    .price{
+                        font-size: 22px;
+                    }
+                    h3{
+                        margin-top: 6px;
+                    }
                 }
-                .price{
-                    font-size: 22px;
+                .course-desc{
+                    visibility: hidden;
+                    display: flex;
+                    flex-wrap: wrap;                 
+                    position: absolute;
+                    top: 100%;                                                     
+                    margin-top: 10px;                    
+                    font-size: 15px;
+                    .lessons{
+                        margin-right: 15px;
+                    }
+                    .description{                        
+                        margin-top: 15px;
+                    }     
                 }
-                h3{
-                    margin-top: 6px;
-                }
-            }            
+            } 
+            &:hover{
+                cursor: pointer;                          
+            }
+            &:hover .course-price{
+                transform: translateY(-72%) translateY(-40px);                
+            }
+            &:hover .course-desc{
+                visibility: visible;
+            }           
         }
         .card-one{
             background-image: url('../img/course-02-443x600.jpg');                                 
@@ -412,7 +438,7 @@
     .sgommata{
         position: absolute;
         right: 0;
-        bottom: 100%;
+        bottom: 99%;
         z-index: -10;
         width: 60%;
         .sgommata-img{
