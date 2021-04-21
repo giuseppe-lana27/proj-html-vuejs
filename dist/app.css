@@ -413,6 +413,7 @@ body {
   padding: 15px;
   background-color: #eceeef;
   margin: 20px 20px;
+  border-radius: 5px;
 }
 .events .events-box .left .event-box .left-box {
   float: left;
@@ -476,6 +477,7 @@ body {
   padding: 15px;
   background-color: #eceeef;
   margin: 20px 20px;
+  border-radius: 5px;
 }
 .events .events-box .right .event-box .left-box {
   float: left;
@@ -544,4 +546,29 @@ body {
   color: #1eae96;
   margin-left: 5px;
   border-bottom: 1px solid #bcbcbc;
+}
+
+.maxcoach-love {
+  width: 100%;
+  height: 800px;
+  background-color: #eceeef;
+}
+.maxcoach-love .main-section-title {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 48px;
+}
+.maxcoach-love .review {
+  width: 90%;
+  height: 500px;
+  margin: 25px auto;
+  background-color: red;
+  display: flex;
+  align-items: center;
+}
+.maxcoach-love .review .person-review {
+  width: calc((100% / 3) - 40px);
+  height: 300px;
+  background: blue;
+  margin: 0 20px;
 }
