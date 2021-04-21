@@ -417,14 +417,38 @@
         width: 90%;
         height: 500px;
         margin: 25px auto;
-        background-color: red;
         display: flex;
         align-items: center;
         .person-review{
-            width: calc((100% / 3) - 40px);
-            height: 300px;
-            background: blue;
-            margin: 0 20px;
+            width: calc((100% / 3) - 30px);            
+            background-color: $pricingColor;
+            margin: 0 15px;
+            padding: 15px;
+            h4{
+                color: $takstitle_color;
+                margin-bottom: 20px;
+            }
+            p{
+                color: $paragraph_color;
+                line-height: 1.5;
+            }
+            .person-avatar{
+                height: 100px;
+                margin-top: 30px;
+                display: flex;
+                align-items: center;
+                img{
+                    height: 100%;
+                    border-radius: 100%;
+                }
+                .person-description{
+                    margin-left: 20px;
+                    .person-name{
+                        text-transform: uppercase;
+                        color: $navlink-color;
+                    }
+                }
+            }
         }
     }
 }

@@ -562,13 +562,37 @@ body {
   width: 90%;
   height: 500px;
   margin: 25px auto;
-  background-color: red;
   display: flex;
   align-items: center;
 }
 .maxcoach-love .review .person-review {
-  width: calc((100% / 3) - 40px);
-  height: 300px;
-  background: blue;
-  margin: 0 20px;
+  width: calc((100% / 3) - 30px);
+  background-color: #eceeef;
+  margin: 0 15px;
+  padding: 15px;
+}
+.maxcoach-love .review .person-review h4 {
+  color: #282935;
+  margin-bottom: 20px;
+}
+.maxcoach-love .review .person-review p {
+  color: #797979;
+  line-height: 1.5;
+}
+.maxcoach-love .review .person-review .person-avatar {
+  height: 100px;
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+}
+.maxcoach-love .review .person-review .person-avatar img {
+  height: 100%;
+  border-radius: 100%;
+}
+.maxcoach-love .review .person-review .person-avatar .person-description {
+  margin-left: 20px;
+}
+.maxcoach-love .review .person-review .person-avatar .person-description .person-name {
+  text-transform: uppercase;
+  color: #343142;
 }
