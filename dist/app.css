@@ -661,3 +661,24 @@ body {
 .newsletter .input-bar input:focus {
   outline: none;
 }
+
+footer {
+  height: 500px;
+  padding: 35px;
+  background-color: #000;
+  display: flex;
+  justify-content: space-between;
+}
+footer .address .title {
+  color: #fff;
+  margin-bottom: 15px;
+}
+footer .address .hq {
+  margin-bottom: 15px;
+}
+footer .address .phone-contact {
+  margin-bottom: 15px;
+}
+footer .address .text-color {
+  color: #797979;
+}

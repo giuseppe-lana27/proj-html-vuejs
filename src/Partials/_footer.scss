@@ -1,0 +1,25 @@
+footer{
+    height: 500px;
+    padding: 35px;
+    background-color: $footerBg-color;
+    display: flex;    
+    justify-content: space-between;    
+    .address{
+        .title{
+            color: #fff;
+            margin-bottom: 15px;
+        }
+        .hq{
+            margin-bottom: 15px;
+        }
+        .phone-contact{
+            margin-bottom: 15px;
+        }
+        .email-contact{
+        }
+        .text-color{
+            color: $paragraph_color;
+
+        }
+    }
+}
