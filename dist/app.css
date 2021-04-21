@@ -552,6 +552,19 @@ body {
   width: 100%;
   height: 800px;
   background-color: #eceeef;
+  position: relative;
+}
+.maxcoach-love .sgommata {
+  position: absolute;
+  right: 0;
+  bottom: 100%;
+  z-index: -10;
+  width: 60%;
+}
+.maxcoach-love .sgommata .sgommata-img {
+  transform: rotate(90deg);
+  width: 100%;
+  fill: #eceeef;
 }
 .maxcoach-love .main-section-title {
   text-align: center;
@@ -596,10 +609,55 @@ body {
   margin-left: 20px;
 }
 .maxcoach-love .review .person-review .person-avatar .person-description .person-name {
+  font-size: 16px;
   text-transform: uppercase;
   color: #343142;
   margin: 0;
 }
 .maxcoach-love .review .person-review .person-avatar .person-description .job {
   color: #797979;
+}
+.maxcoach-love .review .opaque {
+  opacity: 0.5;
+}
+
+.newsletter {
+  background-image: url("..img/maxcoach-shape-02.png");
+  background-position: right;
+  height: 500px;
+  padding: 30px;
+}
+.newsletter .newsletter-title {
+  text-align: center;
+}
+.newsletter .newsletter-title .title {
+  font-size: 48px;
+  display: inline-block;
+  margin-right: 10px;
+}
+.newsletter .newsletter-title .title-completion {
+  color: #1eae96;
+  font-size: 48px;
+}
+.newsletter .newsletter-par {
+  width: 35%;
+  margin: auto;
+  margin-top: 40px;
+  text-align: center;
+  color: #797979;
+  font-size: 18px;
+  line-height: 1.5;
+}
+.newsletter .input-bar {
+  margin-top: 40px;
+  text-align: center;
+}
+.newsletter .input-bar input {
+  width: 30%;
+  border: none;
+  font-size: 18px;
+  padding: 15px 30px;
+}
+.newsletter .input-bar input:focus {
+  outline: none;
 }
