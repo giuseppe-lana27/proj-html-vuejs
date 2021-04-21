@@ -374,9 +374,7 @@
                             font-size: 22px;
                         }
                     }
-                    .tickets-button{
-                       display: flex;
-                       align-items: center;
+                    .tickets-button{                       
                        text-align: center;
                        margin-right: 15px;
                        .btn{
@@ -388,6 +386,20 @@
         }
         
         
+    }
+    .events-bottom{
+        width: 35%;
+        margin: auto;
+        text-align: center;
+        p{
+            color: $paragraph_color;
+            a{
+                text-decoration: none;
+                color: $mainColor;
+                margin-left: 5px;
+                border-bottom: 1px solid $searchColor;
+            }
+        }
     }
     
 }

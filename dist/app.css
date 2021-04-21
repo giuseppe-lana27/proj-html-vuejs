@@ -525,11 +525,23 @@ body {
   font-size: 22px;
 }
 .events .events-box .right .event-box .right-box .tickets-button {
-  display: flex;
-  align-items: center;
   text-align: center;
   margin-right: 15px;
 }
 .events .events-box .right .event-box .right-box .tickets-button .btn {
   padding: 8px 20px;
+}
+.events .events-bottom {
+  width: 35%;
+  margin: auto;
+  text-align: center;
+}
+.events .events-bottom p {
+  color: #797979;
+}
+.events .events-bottom p a {
+  text-decoration: none;
+  color: #1eae96;
+  margin-left: 5px;
+  border-bottom: 1px solid #bcbcbc;
 }
