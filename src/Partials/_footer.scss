@@ -1,13 +1,15 @@
-footer{
-    height: 500px;
+footer{    
     padding: 35px;
     background-color: $footerBg-color;
     display: flex;    
-    justify-content: space-between;    
+    justify-content: center;    
+    flex-wrap: wrap ;
     .address{
+        margin-right: 80px;        
         .title{
             color: #fff;
             margin-bottom: 15px;
+            padding: 10px;
         }
         .hq{
             margin-bottom: 15px;
@@ -16,10 +18,82 @@ footer{
             margin-bottom: 15px;
         }
         .email-contact{
+            cursor: pointer;
+            transition: .6s color;
+            &:hover{
+                color: $mainColor;
+            }
         }
         .text-color{
+            padding: 10px;
             color: $paragraph_color;
 
+        }
+        .social-list{
+            margin-top: 30px;
+            li{
+                display: inline-block;
+                margin-left: 20px;
+            }
+            a{
+                color: $paragraph_color;
+                font-size: 24px;
+                transition: .6s color;
+                &:hover{
+                    color: #fff;
+                }
+            }
+        }
+    }
+    .explore{
+        margin-right: 50px;
+        .title{
+            color:#fff;
+            padding: 10px;
+        }
+        .explore-list{    
+            ul{
+                columns: 2;
+            }                
+            li{                
+                padding: 10px;
+            }
+            a{
+                text-decoration: none;
+                color: $paragraph_color;
+                transition: .6s color;
+                &:hover{
+                    color: $mainColor;
+                }
+            }
+        }
+    }
+    .information{
+        margin-right: 50px;
+        .title{
+            color: #fff;
+            padding: 10px;
+        }
+        .information-list{            
+            li{
+                padding: 10px;
+            }
+            a{
+                text-decoration: none;
+                color: $paragraph_color;
+                transition: .6s color;
+                &:hover{
+                    color: $mainColor;
+                }
+            }
+        }
+    }
+    .copyright{
+        width: 100%;
+        text-align: center;  
+        margin-top: 50px;
+        p{
+            color: $paragraph_color;
         }
     }
 }

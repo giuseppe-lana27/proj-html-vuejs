@@ -43,6 +43,10 @@ body {
   color: #fefefe;
 }
 
+ul {
+  list-style: none;
+}
+
 .header-top {
   display: flex;
   align-items: center;
@@ -663,15 +667,19 @@ body {
 }
 
 footer {
-  height: 500px;
   padding: 35px;
   background-color: #000;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+footer .address {
+  margin-right: 80px;
 }
 footer .address .title {
   color: #fff;
   margin-bottom: 15px;
+  padding: 10px;
 }
 footer .address .hq {
   margin-bottom: 15px;
@@ -679,6 +687,77 @@ footer .address .hq {
 footer .address .phone-contact {
   margin-bottom: 15px;
 }
+footer .address .email-contact {
+  cursor: pointer;
+  transition: 0.6s color;
+}
+footer .address .email-contact:hover {
+  color: #1eae96;
+}
 footer .address .text-color {
+  padding: 10px;
+  color: #797979;
+}
+footer .address .social-list {
+  margin-top: 30px;
+}
+footer .address .social-list li {
+  display: inline-block;
+  margin-left: 20px;
+}
+footer .address .social-list a {
+  color: #797979;
+  font-size: 24px;
+  transition: 0.6s color;
+}
+footer .address .social-list a:hover {
+  color: #fff;
+}
+footer .explore {
+  margin-right: 50px;
+}
+footer .explore .title {
+  color: #fff;
+  padding: 10px;
+}
+footer .explore .explore-list ul {
+  -moz-columns: 2;
+       columns: 2;
+}
+footer .explore .explore-list li {
+  padding: 10px;
+}
+footer .explore .explore-list a {
+  text-decoration: none;
+  color: #797979;
+  transition: 0.6s color;
+}
+footer .explore .explore-list a:hover {
+  color: #1eae96;
+}
+footer .information {
+  margin-right: 50px;
+}
+footer .information .title {
+  color: #fff;
+  padding: 10px;
+}
+footer .information .information-list li {
+  padding: 10px;
+}
+footer .information .information-list a {
+  text-decoration: none;
+  color: #797979;
+  transition: 0.6s color;
+}
+footer .information .information-list a:hover {
+  color: #1eae96;
+}
+footer .copyright {
+  width: 100%;
+  text-align: center;
+  margin-top: 50px;
+}
+footer .copyright p {
   color: #797979;
 }

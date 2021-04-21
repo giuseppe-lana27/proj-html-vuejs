@@ -436,6 +436,47 @@
                 <h4 class="hq text-color">382 NE 191st St # 87394 Miami, FL 33179-3899</h4>
                 <h4 class="phone-contact  text-color">+1 (305) 547-9909 (9am - 5pm EST, Monday - Friday)</h4>
                 <h4 class="email-contact  text-color">support@maxcoach.com</h4>
+                <div class="social-links">
+                    <div class="social-list">
+                        <ul>
+                            <li>
+                                <a href="#"><i class="fab fa-facebook-square"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="explore">
+                <h3 class="title">Explore</h3>
+                <div class="explore-list">
+                    <ul>
+                        <li v-for="item in exploreLinks">
+                            <a href="#">{{item.name}}</a>
+                        </li>    
+                    </ul>
+                </div>                
+            </div>
+            <div class="information">
+                <h3 class="title">Information</h3>
+                <div class="information-list">
+                    <ul>
+                        <li v-for="item in informationList">
+                            <a href="#">{{item.name}}</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p><small><i class="far fa-copyright"></i> 2020 Maxcoach. All Rights Reserved</small></p>
             </div>
         </footer>
         <!-- /footer -->

@@ -21,5 +21,39 @@ var app = new Vue({
                 name: "Shop",
             },
         },
+        exploreLinks:{
+            start: {
+                name: "Start Here",
+            },
+            blog:{
+                name: "Blog",
+            },
+            about:{
+                name: "About Us",
+            },
+            success:{
+                name: "Success Story",
+            },
+            courses:{
+                name: "Courses",
+            },
+            contact:{
+                name: "Contact Us",
+            }
+        },
+        informationList:{
+            members:{
+                name: "Membership",
+            },
+            purchase:{
+                name: "Purchase Guide",
+            },
+            privacy:{
+                name: "Privacy Policy",
+            },
+            terms:{
+                name: "Terms of service"
+            },            
+        },
     }
 });
