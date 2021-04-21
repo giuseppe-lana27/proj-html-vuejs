@@ -170,6 +170,9 @@ body {
   width: calc((100% / 3) - 20px);
   margin-right: 20px;
 }
+.dream-section .dream-tasks .task i {
+  font-size: 20px;
+}
 .dream-section .dream-tasks .task h3 {
   display: inline-block;
   color: #282935;
@@ -383,4 +386,150 @@ body {
   display: inline-block;
   font-size: 35px;
   color: #fff;
+}
+
+.events {
+  width: 90%;
+  margin: auto;
+  padding: 50px;
+}
+.events .main-section-title {
+  text-align: center;
+  font-size: 50px;
+  margin-top: 20px;
+}
+.events .events-box {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 40px;
+}
+.events .events-box .left {
+  width: 50%;
+}
+.events .events-box .left .event-box {
+  height: 150px;
+  padding: 15px;
+  background-color: #eceeef;
+  margin: 20px 20px;
+}
+.events .events-box .left .event-box .left-box {
+  float: left;
+  width: 65%;
+}
+.events .events-box .left .event-box .left-box .city {
+  display: flex;
+}
+.events .events-box .left .event-box .left-box .city i {
+  color: #797979;
+  margin-right: 15px;
+}
+.events .events-box .left .event-box .left-box .city p {
+  color: #797979;
+}
+.events .events-box .left .event-box .left-box .about {
+  display: flex;
+  justify-self: center;
+  align-self: center;
+}
+.events .events-box .left .event-box .left-box .about h3 {
+  font-size: 20px;
+  margin-top: 15px;
+}
+.events .events-box .left .event-box:hover {
+  cursor: pointer;
+  border-left: 2px solid #1eae96;
+}
+.events .events-box .left .event-box:hover .btn {
+  background-color: #343142;
+}
+.events .events-box .left .event-box .right-box {
+  float: right;
+  width: 35%;
+}
+.events .events-box .left .event-box .right-box .date {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 15px;
+}
+.events .events-box .left .event-box .right-box .date .day-number {
+  font-size: 48px;
+  color: #1eae96;
+}
+.events .events-box .left .event-box .right-box .date .month {
+  font-size: 22px;
+}
+.events .events-box .left .event-box .right-box .tickets-button {
+  text-align: center;
+  margin-right: 15px;
+}
+.events .events-box .left .event-box .right-box .tickets-button .btn {
+  padding: 8px 20px;
+}
+.events .events-box .right {
+  width: 50%;
+}
+.events .events-box .right .event-box {
+  height: 150px;
+  padding: 15px;
+  background-color: #eceeef;
+  margin: 20px 20px;
+}
+.events .events-box .right .event-box .left-box {
+  float: left;
+  width: 65%;
+}
+.events .events-box .right .event-box .left-box .city {
+  display: flex;
+}
+.events .events-box .right .event-box .left-box .city i {
+  color: #797979;
+  margin-right: 15px;
+}
+.events .events-box .right .event-box .left-box .city p {
+  color: #797979;
+}
+.events .events-box .right .event-box .left-box .about {
+  display: flex;
+  justify-self: center;
+  align-self: center;
+}
+.events .events-box .right .event-box .left-box .about h3 {
+  font-size: 20px;
+  margin-top: 15px;
+}
+.events .events-box .right .event-box:hover {
+  cursor: pointer;
+  border-left: 2px solid #1eae96;
+}
+.events .events-box .right .event-box:hover .btn {
+  background-color: #343142;
+}
+.events .events-box .right .event-box .right-box {
+  float: right;
+  width: 35%;
+}
+.events .events-box .right .event-box .right-box .date {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 15px;
+}
+.events .events-box .right .event-box .right-box .date .day-number {
+  font-size: 48px;
+  color: #1eae96;
+}
+.events .events-box .right .event-box .right-box .date .month {
+  font-size: 22px;
+}
+.events .events-box .right .event-box .right-box .tickets-button {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin-right: 15px;
+}
+.events .events-box .right .event-box .right-box .tickets-button .btn {
+  padding: 8px 20px;
 }

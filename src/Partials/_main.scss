@@ -19,6 +19,9 @@
         .task{
             width: calc((100% / 3) - 20px);
             margin-right: 20px;
+            i{
+                font-size: 20px;
+            }
             h3{
                 display: inline-block;
                 color: $takstitle_color;
@@ -239,3 +242,152 @@
     }
 }
 // quinta sezione
+.events{
+    width: 90%;
+    margin: auto;   
+    padding: 50px;    
+    .main-section-title{
+        text-align: center;
+        font-size: 50px;
+        margin-top: 20px;
+    }
+    .events-box{     
+        width: 100%;          
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;        
+        padding: 40px;
+        .left{
+            width: 50%;
+            .event-box{        
+                height: 150px;     
+                padding: 15px;
+                background-color: $pricingColor;
+                margin: 20px 20px;
+                .left-box{
+                    float: left;
+                    width: 65%;                    
+                    .city{
+                        display: flex;
+                        i{
+                            color: $paragraph_color;
+                            margin-right: 15px;
+                        }
+                        p{
+                            color: $paragraph_color;
+                        }
+                    }
+                    .about{
+                        display: flex;
+                        justify-self: center;
+                        align-self: center;
+                        h3{
+                            font-size: 20px;
+                            margin-top: 15px;
+                        }                
+                    }
+                } 
+                &:hover{
+                    cursor: pointer;
+                    border-left: 2px solid $mainColor;
+                }
+                &:hover .btn{
+                    background-color: $btnHoverColor;
+                }           
+                .right-box{
+                    float: right;
+                    width: 35%;
+                    .date{
+                        display: flex;                
+                        justify-content: center;
+                        text-align: center;                    
+                        margin-bottom: 15px;                    
+                        .day-number{
+                            font-size: 48px;
+                            color: $mainColor;
+                        }
+                        .month{
+                            font-size: 22px;
+                        }
+                    }
+                    .tickets-button{                       
+                       text-align: center;
+                       margin-right: 15px;
+                       .btn{
+                           padding: 8px 20px;
+                       }
+                    }
+                }                
+            }
+
+        }
+        .right{
+            width: 50%;
+            .event-box{       
+                height: 150px;     
+                padding: 15px;
+                background-color: $pricingColor;
+                margin: 20px 20px;
+                .left-box{
+                    float: left;
+                    width: 65%;  
+                    .city{
+                        display: flex;
+                        i{
+                            color: $paragraph_color;
+                            margin-right: 15px;
+                        }
+                        p{
+                            color: $paragraph_color;
+                        }
+                    }
+                    .about{
+                        display: flex;
+                        justify-self: center;
+                        align-self: center;
+                        h3{
+                            font-size: 20px;
+                            margin-top: 15px;
+                        }                
+                    }
+                } 
+                &:hover{
+                    cursor: pointer;
+                    border-left: 2px solid $mainColor;
+                }
+                &:hover .btn{
+                    background-color: $btnHoverColor;
+                }           
+                .right-box{
+                    float: right;
+                    width: 35%;                    
+                    .date{
+                        display: flex;                
+                        justify-content: center;
+                        text-align: center;                    
+                        margin-bottom: 15px;                    
+                        .day-number{
+                            font-size: 48px;
+                            color: $mainColor;
+                        }
+                        .month{
+                            font-size: 22px;
+                        }
+                    }
+                    .tickets-button{
+                       display: flex;
+                       align-items: center;
+                       text-align: center;
+                       margin-right: 15px;
+                       .btn{
+                           padding: 8px 20px;
+                       }
+                    }
+                }                
+            }
+        }
+        
+        
+    }
+    
+}
