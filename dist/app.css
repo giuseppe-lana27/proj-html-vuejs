@@ -572,8 +572,10 @@ body {
   padding: 15px;
 }
 .maxcoach-love .review .person-review h4 {
+  font-size: 20px;
   color: #282935;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
+  line-height: 1.5;
 }
 .maxcoach-love .review .person-review p {
   color: #797979;
@@ -581,12 +583,13 @@ body {
 }
 .maxcoach-love .review .person-review .person-avatar {
   height: 100px;
-  margin-top: 30px;
   display: flex;
   align-items: center;
+  margin-top: 30px;
+  padding: 15px;
 }
 .maxcoach-love .review .person-review .person-avatar img {
-  height: 100%;
+  height: 70px;
   border-radius: 100%;
 }
 .maxcoach-love .review .person-review .person-avatar .person-description {
@@ -595,4 +598,8 @@ body {
 .maxcoach-love .review .person-review .person-avatar .person-description .person-name {
   text-transform: uppercase;
   color: #343142;
+  margin: 0;
+}
+.maxcoach-love .review .person-review .person-avatar .person-description .job {
+  color: #797979;
 }

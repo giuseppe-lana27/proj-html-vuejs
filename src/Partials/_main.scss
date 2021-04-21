@@ -423,22 +423,25 @@
             width: calc((100% / 3) - 30px);            
             background-color: $pricingColor;
             margin: 0 15px;
-            padding: 15px;
+            padding: 15px;            
             h4{
-                color: $takstitle_color;
-                margin-bottom: 20px;
+                font-size: 20px;
+                color: $takstitle_color;     
+                margin-bottom: 30px;
+                line-height: 1.5;  
             }
             p{
                 color: $paragraph_color;
-                line-height: 1.5;
+                line-height: 1.5;                
             }
             .person-avatar{
-                height: 100px;
-                margin-top: 30px;
+                height: 100px;                
                 display: flex;
                 align-items: center;
+                margin-top: 30px;
+                padding: 15px;
                 img{
-                    height: 100%;
+                    height: 70px;
                     border-radius: 100%;
                 }
                 .person-description{
@@ -446,6 +449,11 @@
                     .person-name{
                         text-transform: uppercase;
                         color: $navlink-color;
+                        margin: 0;
+                    }
+                    .job{
+                        color: $paragraph_color;
+
                     }
                 }
             }
