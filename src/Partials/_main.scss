@@ -1,4 +1,4 @@
-// prima sezione
+// prima sezione dream
 .dream-section{   
     padding: 40px;
     .dream-description{
@@ -18,22 +18,30 @@
         margin: 40px auto;
         .task{
             width: calc((100% / 3) - 20px);
+            display: flex;
             margin-right: 20px;
-            i{
-                color: $takstitle_color;
-                font-size: 20px;
-            }
-            h3{
-                display: inline-block;
-                color: $takstitle_color;
-                margin-left: 20px;
-            }
-            p{
-                font-size: 15px;
-                margin-top: 15px;
-                color: $paragraph_color;
-                line-height: 1.5;
-            }
+            .icon{               
+                i{
+                    color: $takstitle_color;
+                    font-size: 25px;
+                }
+                .ml{
+                    margin-left: -10px;
+                }
+            }             
+            .task-description{
+                h3{                    
+                    color: $takstitle_color;
+                    margin-left: 20px;
+                }
+                p{
+                    font-size: 15px;
+                    margin-top: 15px;
+                    margin-left: 20px;
+                    color: $paragraph_color;
+                    line-height: 1.5;
+                }
+            }            
         }        
     }
     .tasks-buttons{
@@ -42,7 +50,7 @@
         margin-top: 60px;
     }
 }
-// seconda sezione
+// seconda sezione explore maxcoach
 .explore-section-bgcolor{
     background-color: $exploreBackground-color;
     .explore-section{    
@@ -59,15 +67,15 @@
             padding: 15px;
             .carousel-card{
                 width: calc((100% / 3) - 20px);
-                height: 500px;         
+                height: 500px;  
                 text-align: center;
                 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
                 background-color: $carouselCard-bgColor;
                 margin-right: 20px;
                 border-radius: 5px;
                 overflow: hidden;
-                cursor: pointer;
-                img{
+                cursor: pointer;                
+                img{                    
                     width: 100%;
                     transition: 1s all;      
                 }
@@ -103,7 +111,7 @@
         }
     }
 }
-//terza sezione
+//terza sezione prices
 .pricing-section{
     padding: 50px;
     .main-section-title{
@@ -211,7 +219,7 @@
         }
     }
 }
-//quarta sezione
+//quarta sezione video
 .video-section{
     background-color: $videosection-color;
     background-image: url('../img/background-map-dots-top-right-transparent.png');
@@ -230,8 +238,10 @@
             position: relative;
             border-radius: 10px;
             overflow: hidden;
+            cursor: pointer;
             img{
                 width: 100%;
+                transition: 1s all;
             }
             .youtube-icon{
                 position: absolute;
@@ -239,6 +249,9 @@
                 left: 50%;
                 transform: translate(-50%, -50%);
             }
+        }
+        &:hover img{
+            transform: scale(1.1);
         }
     }
     .video-description{
@@ -281,7 +294,7 @@
         }
     }
 }
-// quinta sezione
+// quinta sezione events
 .events{
     width: 90%;
     margin: auto;   
@@ -442,7 +455,7 @@
     }
     
 }
-// sesta sezione
+// sesta sezione love for maxcoach
 .maxcoach-love{
     width: 100%;    
     background-color: $pricingColor;
@@ -526,7 +539,7 @@
     }
     
 }
-// settima sezione
+// settima sezione newsletter sub
 .newsletter{
     background-image: url('..img/maxcoach-shape-02.png');
     background-position: right;    

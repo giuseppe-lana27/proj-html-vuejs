@@ -235,20 +235,24 @@ header {
 }
 .dream-section .dream-tasks .task {
   width: calc((100% / 3) - 20px);
+  display: flex;
   margin-right: 20px;
 }
-.dream-section .dream-tasks .task i {
+.dream-section .dream-tasks .task .icon i {
   color: #282935;
-  font-size: 20px;
+  font-size: 25px;
 }
-.dream-section .dream-tasks .task h3 {
-  display: inline-block;
+.dream-section .dream-tasks .task .icon .ml {
+  margin-left: -10px;
+}
+.dream-section .dream-tasks .task .task-description h3 {
   color: #282935;
   margin-left: 20px;
 }
-.dream-section .dream-tasks .task p {
+.dream-section .dream-tasks .task .task-description p {
   font-size: 15px;
   margin-top: 15px;
+  margin-left: 20px;
   color: #797979;
   line-height: 1.5;
 }
@@ -445,15 +449,20 @@ header {
   position: relative;
   border-radius: 10px;
   overflow: hidden;
+  cursor: pointer;
 }
 .video-section .video .video-preview img {
   width: 100%;
+  transition: 1s all;
 }
 .video-section .video .video-preview .youtube-icon {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+.video-section .video:hover img {
+  transform: scale(1.1);
 }
 .video-section .video-description {
   width: 50%;

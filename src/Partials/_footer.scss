@@ -5,6 +5,7 @@ footer{
     justify-content: center;    
     flex-wrap: wrap;
     position: relative;
+    // address section
     .address{
         margin-right: 80px;        
         .title{
@@ -46,6 +47,7 @@ footer{
             }
         }
     }
+    // explore list
     .explore{
         margin-right: 50px;
         .title{
@@ -69,6 +71,7 @@ footer{
             }
         }
     }
+    // information list
     .information{
         margin-right: 50px;
         .title{
@@ -89,6 +92,7 @@ footer{
             }
         }
     }
+    // copyright section
     .copyright{
         width: 100%;
         text-align: center;  

@@ -29,13 +29,14 @@ header{
         margin-left: 4px;
     }
 }
-// intestazione e navigazione
+// heading and navigation
 .header-top{
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 20px;
 }
+// logo section
 .logo{
     margin-left: 40px;
     height: 30px;
@@ -43,7 +44,7 @@ header{
         height: 100%;
     }
 }
-// sezione navigazione
+// navigation section
 .main-nav{       
     ul{
         list-style: none;
@@ -63,7 +64,7 @@ header{
         }
     }
 }
-// sezione ricerca
+// search section
 .search{
     display: flex;
     .language{
@@ -128,7 +129,7 @@ header{
         }
     }
 }
-// header bottom con hero
+// header bottom and hero
 .header-bottom{     
     width: 90%;
     margin: auto;    
