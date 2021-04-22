@@ -142,26 +142,19 @@
                         <h3 class="section-title">Let's Dream Big Together</h3>
                         <h2 class="main-section-title">Explore how can I help you</h2>
                         <div class="explore-carousel">
-                            <div class="carousel-card">
-                                <img src="img/home-business-service-slide-01-480x298.jpg" alt="Home Business">
-                                <h3>Consultative Training</h3>
-                                <p>With a coach addressing multiple issues that are off balance, affecting your business in various unconsidered ways.</p>
+                            <div class="carousel-card" v-for="item in exploreSection">
+                                <img :src="item.img" alt="Home Business">
+                                <h3>{{item.title}}</h3>
+                                <p>{{item.paragraph}}</p>
                                 <a href="#" class="wht-btn">Discover now <i class="fas fa-long-arrow-alt-right"></i></a>                            
-                            </div>
-                            <div class="carousel-card">
-                                <img src="img/home-business-service-slide-02-480x298.jpg" alt="Home Business">
-                                <h3>Real Deal Coaching</h3>
-                                <p>Brings an exceptionally powerful opportunity. Being able to accept to work with that opportunity.</p>
-                                <a href="#" class="wht-btn">Discover now <i class="fas fa-long-arrow-alt-right"></i></a>
-                            </div>
-                            <div class="carousel-card">
-                                <img src="img/home-business-service-slide-03-480x298.jpg" alt="Home Business">
-                                <h3>Advisor Training Program</h3>
-                                <p>Getting high quality, entrepreneur mindset driven online business coaching, is what is needed.</p>
-                                <a href="#" class="wht-btn">Discover now <i class="fas fa-long-arrow-alt-right"></i></a>
-                            </div>
+                            </div>                            
                         </div>
-                    </div>
+                        <div class="explore-circles">
+                            <i class="fas fa-circle"></i>
+                            <i class="fas fa-circle"></i>
+                            <i class="fas fa-circle"></i>
+                        </div>
+                    </div>                    
                  </div>
             </div>            
             <!-- /seconda sezione -->
@@ -488,7 +481,13 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                        <div class="review-circles">
+                            <i class="fas fa-circle"></i>
+                            <i class="fas fa-circle"></i>
+                            <i class="fas fa-circle"></i>
+                            <i class="fas fa-circle"></i>
+                        </div>                     
+                    </div>                    
                 </div>
             </div>
             <!-- /sesta sezione -->

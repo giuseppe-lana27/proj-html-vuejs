@@ -107,7 +107,7 @@ ul {
   top: 10px;
 }
 .search .language .choose-language li {
-  margin-top: 10px;
+  margin-top: 13px;
   text-transform: uppercase;
 }
 .search .language .choose-language li img {
@@ -173,6 +173,9 @@ ul {
   font-size: 20px;
   color: #797979;
   margin-bottom: 35px;
+}
+.header-bottom .hero .hero-description .btn {
+  margin-left: 0;
 }
 .header-bottom .hero .hero-img {
   width: 55%;
@@ -270,6 +273,13 @@ ul {
   margin-left: 5px;
   font-size: 20px;
 }
+.explore-section-bgcolor .explore-section .explore-circles {
+  text-align: center;
+  font-size: 14px;
+}
+.explore-section-bgcolor .explore-section .explore-circles i:not(:last-child) {
+  margin-right: 10px;
+}
 
 .pricing-section {
   padding: 50px;
@@ -280,7 +290,6 @@ ul {
   margin-top: 20px;
 }
 .pricing-section .pricing-courses {
-  width: 90%;
   margin: 40px auto;
   display: flex;
   padding: 15px;
@@ -459,7 +468,6 @@ ul {
   margin-top: 20px;
 }
 .events .events-box {
-  width: 100%;
   margin: auto;
   display: flex;
   flex-wrap: wrap;
@@ -610,7 +618,6 @@ ul {
 
 .maxcoach-love {
   width: 100%;
-  height: 800px;
   background-color: #eceeef;
   position: relative;
 }
@@ -637,6 +644,7 @@ ul {
   margin: 25px auto;
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
 }
 .maxcoach-love .review .person-review {
   width: calc((100% / 3) - 30px);
@@ -680,12 +688,20 @@ ul {
 .maxcoach-love .review .opaque {
   opacity: 0.5;
 }
+.maxcoach-love .review .review-circles {
+  margin: auto;
+  text-align: center;
+  font-size: 14px;
+}
+.maxcoach-love .review .review-circles i:not(:last-child) {
+  margin-right: 10px;
+}
 
 .newsletter {
   background-image: url("..img/maxcoach-shape-02.png");
   background-position: right;
-  height: 500px;
   padding: 30px;
+  margin-bottom: 50px;
 }
 .newsletter .newsletter-title {
   text-align: center;

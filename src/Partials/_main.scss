@@ -88,6 +88,13 @@
                 }        
             }
         }
+        .explore-circles{
+            text-align: center;
+            font-size: 14px;
+            i:not(:last-child){
+                margin-right: 10px;
+            }
+        }
     }
 }
 //terza sezione
@@ -99,7 +106,6 @@
         margin-top: 20px;
     }
     .pricing-courses{
-        width: 90%;
         margin: 40px auto;
         display: flex;
         padding: 15px;        
@@ -279,8 +285,7 @@
         font-size: 50px;
         margin-top: 20px;
     }
-    .events-box{     
-        width: 100%;          
+    .events-box{                   
         margin: auto;
         display: flex;
         flex-wrap: wrap;        
@@ -433,8 +438,7 @@
 }
 // sesta sezione
 .maxcoach-love{
-    width: 100%;
-    height: 800px;
+    width: 100%;    
     background-color: $pricingColor;
     position: relative;
     .curva{
@@ -461,6 +465,7 @@
         margin: 25px auto;
         display: flex;
         align-items: center;
+        flex-wrap: wrap;
         .person-review{
             width: calc((100% / 3) - 30px);            
             background-color: $pricingColor;
@@ -503,15 +508,24 @@
         } 
         .opaque{
             opacity: 0.5;
-        }       
+        }
+        .review-circles{   
+            margin: auto;         
+            text-align: center;
+            font-size: 14px;
+            i:not(:last-child){
+                margin-right: 10px;
+            }
+        }             
     }
+    
 }
 // settima sezione
 .newsletter{
     background-image: url('..img/maxcoach-shape-02.png');
-    background-position: right;
-    height: 500px;
+    background-position: right;    
     padding: 30px;
+    margin-bottom: 50px;
     .newsletter-title{
         text-align: center;
         .title{
