@@ -3,7 +3,8 @@ footer{
     background-color: $footerBg-color;
     display: flex;    
     justify-content: center;    
-    flex-wrap: wrap ;
+    flex-wrap: wrap;
+    position: relative;
     .address{
         margin-right: 80px;        
         .title{
@@ -94,6 +95,22 @@ footer{
         margin-top: 50px;
         p{
             color: $paragraph_color;
+        }
+    }
+    .to-head{
+        height: 50px;
+        width: 50px;
+        border-radius: 100%;
+        background-color: $secondaryColor;
+        position: sticky;
+        top: 100%;
+        left: 100%;
+        display: flex;
+        justify-content: center;        
+        a{          
+            color: #fff;
+            align-self: center;            
+            font-size: 22px;
         }
     }
 }

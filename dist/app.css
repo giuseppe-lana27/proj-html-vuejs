@@ -47,6 +47,38 @@ ul {
   list-style: none;
 }
 
+header {
+  position: relative;
+}
+
+.right-elements {
+  position: fixed;
+  top: 30%;
+  right: 0;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  background-color: #eceeef;
+  border-radius: 5px;
+}
+.right-elements i {
+  font-size: 20px;
+  cursor: pointer;
+}
+.right-elements i:not(:first-child) {
+  margin-top: 20px;
+}
+.right-elements .fa-life-ring {
+  margin-left: 2px;
+}
+.right-elements .fa-book {
+  margin-left: 3px;
+}
+.right-elements .fa-ruler-combined {
+  margin-left: 4px;
+}
+
 .header-top {
   display: flex;
   align-items: center;
@@ -206,6 +238,7 @@ ul {
   margin-right: 20px;
 }
 .dream-section .dream-tasks .task i {
+  color: #282935;
   font-size: 20px;
 }
 .dream-section .dream-tasks .task h3 {
@@ -251,9 +284,11 @@ ul {
   margin-right: 20px;
   border-radius: 5px;
   overflow: hidden;
+  cursor: pointer;
 }
 .explore-section-bgcolor .explore-section .explore-carousel .carousel-card img {
   width: 100%;
+  transition: 1s all;
 }
 .explore-section-bgcolor .explore-section .explore-carousel .carousel-card h3 {
   margin: 20px 0;
@@ -272,6 +307,9 @@ ul {
   vertical-align: middle;
   margin-left: 5px;
   font-size: 20px;
+}
+.explore-section-bgcolor .explore-section .explore-carousel .carousel-card:hover img {
+  transform: scale(1.1);
 }
 .explore-section-bgcolor .explore-section .explore-circles {
   text-align: center;
@@ -744,6 +782,7 @@ footer {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  position: relative;
 }
 footer .address {
   margin-right: 80px;
@@ -832,4 +871,20 @@ footer .copyright {
 }
 footer .copyright p {
   color: #797979;
+}
+footer .to-head {
+  height: 50px;
+  width: 50px;
+  border-radius: 100%;
+  background-color: #0088cc;
+  position: sticky;
+  top: 100%;
+  left: 100%;
+  display: flex;
+  justify-content: center;
+}
+footer .to-head a {
+  color: #fff;
+  align-self: center;
+  font-size: 22px;
 }
