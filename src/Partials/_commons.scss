@@ -23,13 +23,13 @@ body{
 }
 .section-title{
     font-size: 28px;
-    color: $mainColor;
+    color: $secondaryColor;
     font-weight: 400;
     text-align: center;
 }
 .wht-btn{
     text-decoration: none;
-    color: $mainColor;    
+    color: $secondaryColor;    
     padding: 15px 30px;   
     border-radius: 5px; 
     &:hover{

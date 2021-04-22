@@ -37,6 +37,8 @@
     display: flex;
     .language{
         margin-right: 40px;
+        position: relative;
+        cursor: pointer;        
         img{
             vertical-align: middle;
         }
@@ -47,18 +49,48 @@
         }
         i{
             vertical-align: middle;
+            
+        }
+        .choose-language{
+            margin-top: 15px;
+            width: 150px;            
+            display: none;
+            position: absolute;
+            top: 10px;
+            li{
+                margin-top: 10px;
+                text-transform: uppercase;
+                img{                    
+                    margin-right: 8px;
+                }
+                
+            }
+        }
+        &:hover .choose-language{
+            display: block;
         }
     }
+    
     .log-in{
         margin-right: 40px;
         font-size: 22px;
+        transition: .6s all;
+        &:hover{
+            color: $secondaryColor;
+            cursor: pointer;
+            
+        }
     }
     .search-bar{
         margin-right: 40px;
         input{
             border: none;
             vertical-align: middle;  
-            color: $searchColor;        
+            color: $searchColor; 
+            padding: 5px;
+            &:focus{
+                outline: none;
+            }       
         }
         i{
             vertical-align: middle;
@@ -84,7 +116,7 @@
             align-self: center;
             h3{
                 font-size: 25px;
-                color: $mainColor;
+                color: $secondaryColor;
             }
             h1{
                 text-transform: uppercase;

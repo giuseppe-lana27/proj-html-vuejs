@@ -4,6 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- favicons -->
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="180x180" href="img/favicon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="img/favicon-192x192.png">
+    <link rel="icon" type="image/png" sizes="270x270" href="img/favicon-270x270.png">
+    <!-- favicons -->
     <!-- font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
     <!-- /font awesome -->
@@ -45,6 +51,13 @@
                             <img src="img/en.png" alt="Language">
                             <span class="lang-selected">English</span>
                             <i class="fas fa-chevron-down"></i>
+                            <div class="choose-language">
+                                <ul>
+                                    <li v-for="item in language">
+                                        <img :src="item.image" alt="Language Flag">{{item.name}}
+                                    </li>                                    
+                                </ul>
+                            </div>
                         </div>
                         <div class="log-in">
                             <i class="far fa-user-circle"></i>
@@ -75,7 +88,7 @@
         <!-- corpo della pagina -->
         <main>
             <div class="container">
-                <!-- prima sezione -->
+            <!-- prima sezione -->
                 <div class="dream-section">
                     <h3 class="section-title">Let's Dream Big Together</h3>
                     <div class="dream-description">
@@ -120,34 +133,40 @@
                         <a href="#" class="btn">Get Started Today</a>
                     </div>
                 </div>
-                <!-- /prima sezione -->
-                <!-- seconda sezione -->
-                <div class="explore-section">
-                    <h3 class="section-title">Let's Dream Big Together</h3>
-                    <h2 class="main-section-title">Explore how can I help you</h2>
-                    <div class="explore-carousel">
-                        <div class="carousel-card">
-                            <img src="img/home-business-service-slide-01-480x298.jpg" alt="Home Business">
-                            <h3>Consultative Training</h3>
-                            <p>With a coach addressing multiple issues that are off balance, affecting your business in various unconsidered ways.</p>
-                            <a href="#" class="wht-btn">Discover now <i class="fas fa-long-arrow-alt-right"></i></a>                            
-                        </div>
-                        <div class="carousel-card">
-                            <img src="img/home-business-service-slide-02-480x298.jpg" alt="Home Business">
-                            <h3>Real Deal Coaching</h3>
-                            <p>Brings an exceptionally powerful opportunity. Being able to accept to work with that opportunity.</p>
-                            <a href="#" class="wht-btn">Discover now <i class="fas fa-long-arrow-alt-right"></i></a>
-                        </div>
-                        <div class="carousel-card">
-                            <img src="img/home-business-service-slide-03-480x298.jpg" alt="Home Business">
-                            <h3>Advisor Training Program</h3>
-                            <p>Getting high quality, entrepreneur mindset driven online business coaching, is what is needed.</p>
-                            <a href="#" class="wht-btn">Discover now <i class="fas fa-long-arrow-alt-right"></i></a>
+            </div>
+            <!-- /prima sezione -->
+             <!-- seconda sezione -->
+            <div class="explore-section-bgcolor">
+                <div class="container">            
+                    <div class="explore-section">
+                        <h3 class="section-title">Let's Dream Big Together</h3>
+                        <h2 class="main-section-title">Explore how can I help you</h2>
+                        <div class="explore-carousel">
+                            <div class="carousel-card">
+                                <img src="img/home-business-service-slide-01-480x298.jpg" alt="Home Business">
+                                <h3>Consultative Training</h3>
+                                <p>With a coach addressing multiple issues that are off balance, affecting your business in various unconsidered ways.</p>
+                                <a href="#" class="wht-btn">Discover now <i class="fas fa-long-arrow-alt-right"></i></a>                            
+                            </div>
+                            <div class="carousel-card">
+                                <img src="img/home-business-service-slide-02-480x298.jpg" alt="Home Business">
+                                <h3>Real Deal Coaching</h3>
+                                <p>Brings an exceptionally powerful opportunity. Being able to accept to work with that opportunity.</p>
+                                <a href="#" class="wht-btn">Discover now <i class="fas fa-long-arrow-alt-right"></i></a>
+                            </div>
+                            <div class="carousel-card">
+                                <img src="img/home-business-service-slide-03-480x298.jpg" alt="Home Business">
+                                <h3>Advisor Training Program</h3>
+                                <p>Getting high quality, entrepreneur mindset driven online business coaching, is what is needed.</p>
+                                <a href="#" class="wht-btn">Discover now <i class="fas fa-long-arrow-alt-right"></i></a>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <!-- /seconda sezione -->
-                <!-- terza sezione -->
+                 </div>
+            </div>            
+            <!-- /seconda sezione -->
+            <!-- terza sezione -->
+            <div class="container">
                 <div class="pricing-section">
                     <h3 class="section-title">Let's Dream Big Together</h3>
                     <h2 class="main-section-title">Explore how can I help you</h2>
@@ -245,7 +264,7 @@
                         <p>Take the control of their life back and start doing things to make their dream come true. <a href="#">View all courses <i class="fas fa-long-arrow-alt-right"></i></a></p>
                     </div>
                 </div>
-                <!-- /terza sezione -->
+             <!-- /terza sezione -->
             </div>
             <!-- quarta sezione -->
             <div class="video-section">
@@ -429,8 +448,8 @@
             </div>
             <!-- sesta sezione -->
             <div class="maxcoach-love">
-                <div class="sgommata">
-                    <img src="img/sgommata.svg" alt="Sgommata" class="sgommata-img">
+                <div class="curva">
+                    <img src="img/curva.svg" alt="curva" class="curva-img">
                 </div>
                 <div class="container">
                     <h3 class="section-title">People are praising Maxcoach</h3>

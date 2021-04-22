@@ -21,6 +21,16 @@ var app = new Vue({
                 name: "Shop",
             },
         },
+        language:{
+            de:{
+                name: "Deutsch",
+                image: "img/de.png",
+            },
+            fr:{
+                name: "Francais",
+                image: "img/fr.png",
+            }
+        },
         exploreLinks:{
             start: {
                 name: "Start Here",

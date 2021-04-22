@@ -21,7 +21,7 @@ footer{
             cursor: pointer;
             transition: .6s color;
             &:hover{
-                color: $mainColor;
+                color: $secondaryColor;
             }
         }
         .text-color{
@@ -63,7 +63,7 @@ footer{
                 color: $paragraph_color;
                 transition: .6s color;
                 &:hover{
-                    color: $mainColor;
+                    color: $secondaryColor;
                 }
             }
         }
@@ -83,7 +83,7 @@ footer{
                 color: $paragraph_color;
                 transition: .6s color;
                 &:hover{
-                    color: $mainColor;
+                    color: $secondaryColor;
                 }
             }
         }
