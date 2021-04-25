@@ -693,55 +693,64 @@ header {
   align-items: center;
   flex-wrap: wrap;
 }
-.maxcoach-love .review .person-review {
+.maxcoach-love .review .carousel {
+  width: 100%;
+}
+.maxcoach-love .review .carousel .carousel-cell {
+  display: flex;
   width: calc((100% / 3) - 30px);
+  margin-right: 10px;
+  border-radius: 5px;
+  counter-increment: carousel-cell;
+}
+.maxcoach-love .review .carousel .carousel-cell .person-review {
   background-color: #eceeef;
   margin: 0 15px;
   padding: 15px;
 }
-.maxcoach-love .review .person-review h4 {
+.maxcoach-love .review .carousel .carousel-cell .person-review h4 {
   font-size: 20px;
   color: #282935;
   margin-bottom: 30px;
   line-height: 1.5;
 }
-.maxcoach-love .review .person-review p {
+.maxcoach-love .review .carousel .carousel-cell .person-review p {
   color: #797979;
   line-height: 1.5;
 }
-.maxcoach-love .review .person-review .person-avatar {
+.maxcoach-love .review .carousel .carousel-cell .person-review .person-avatar {
   height: 100px;
   display: flex;
   align-items: center;
   margin-top: 30px;
   padding: 15px;
 }
-.maxcoach-love .review .person-review .person-avatar img {
+.maxcoach-love .review .carousel .carousel-cell .person-review .person-avatar img {
   height: 70px;
   border-radius: 100%;
 }
-.maxcoach-love .review .person-review .person-avatar .person-description {
+.maxcoach-love .review .carousel .carousel-cell .person-review .person-avatar .person-description {
   margin-left: 20px;
 }
-.maxcoach-love .review .person-review .person-avatar .person-description .person-name {
+.maxcoach-love .review .carousel .carousel-cell .person-review .person-avatar .person-description .person-name {
   font-size: 16px;
   text-transform: uppercase;
   color: #343142;
   margin: 0;
 }
-.maxcoach-love .review .person-review .person-avatar .person-description .job {
+.maxcoach-love .review .carousel .carousel-cell .person-review .person-avatar .person-description .job {
   color: #797979;
 }
-.maxcoach-love .review .opaque {
-  opacity: 0.5;
-}
-.maxcoach-love .review .review-circles {
-  margin: auto;
+.maxcoach-love .review .carousel .carousel-cell:before {
+  display: block;
   text-align: center;
-  font-size: 14px;
+  content: counter(carousel-cell);
+  line-height: 200px;
+  font-size: 80px;
+  color: white;
 }
-.maxcoach-love .review .review-circles i:not(:last-child) {
-  margin-right: 10px;
+.maxcoach-love .review .carousel button {
+  display: none;
 }
 
 .newsletter {

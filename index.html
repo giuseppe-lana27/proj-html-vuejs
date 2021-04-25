@@ -9,7 +9,8 @@
     <link rel="icon" type="image/png" sizes="180x180" href="img/favicon-180x180.png">
     <link rel="icon" type="image/png" sizes="192x192" href="img/favicon-192x192.png">
     <link rel="icon" type="image/png" sizes="270x270" href="img/favicon-270x270.png">
-    <!-- favicons --> 
+    <!-- /favicons --> 
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <!-- font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
     <!-- /font awesome -->
@@ -478,45 +479,60 @@
                     <h3 class="section-title">People are praising Maxcoach</h3>
                     <h2 class="main-section-title">What make they love Us?</h2>
                     <div class="review">
-                        <div class="person-review opaque">
-                            <h4>It's a choice of quality for people with special needs</h4>
-                            <p>I'm a very strict person so I require everything to be organized and neat. Then, I'll be able to make things right and shine. MaxCoach guys just got me. </p>
-                            <div class="person-avatar">
-                                <img src="img/testimonial-avata-03.jpg" alt="Testimonial">
-                                <div class="person-description">
-                                    <h4 class="person-name">Florence Themes</h4>
-                                    <p class="job">/ Multimedia Admin</p>
+                        <div class="carousel" data-flickity='{ "wrapAround": true }'>
+                            <div class="carousel-cell">
+                                <div class="person-review">
+                                    <h4>High Level of efficiency and scientific teaching methods</h4>
+                                    <p>I'm free to learn at my own pace, follow my own schedule and choose the subject I want to learn from the syllabus. Great study portal for people like me.</p>
+                                    <div class="person-avatar">
+                                        <img src="img/testimonial-avata-02.jpg" alt="Testimonial">
+                                        <div class="person-description">
+                                            <h4 class="person-name">Mina Hollace</h4>
+                                            <p class="job">/ Freelancer</p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="person-review">
-                            <h4>High Level of efficiency and scientific teaching methods</h4>
-                            <p>I'm free to learn at my own pace, follow my own schedule and choose the subject I want to learn from the syllabus. Great study portal for people like me.</p>
-                            <div class="person-avatar">
-                                <img src="img/testimonial-avata-02.jpg" alt="Testimonial">
-                                <div class="person-description">
-                                    <h4 class="person-name">Mina Hollace</h4>
-                                    <p class="job">/ Freelancer</p>
+                            <div class="carousel-cell">
+                                <div class="person-review">
+                                    <h4>It's a choice of quality for people with special needs</h4>
+                                    <p>I'm a very strict person so I require everything to be organized and neat. Then, I'll be able to make things right and shine. MaxCoach guys just got me. </p>
+                                    <div class="person-avatar">
+                                        <img src="img/testimonial-avata-03.jpg" alt="Testimonial">
+                                        <div class="person-description">
+                                            <h4 class="person-name">Florence Themes</h4>
+                                            <p class="job">/ Multimedia Admin</p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="person-review opaque">
-                            <h4>Professional team of specialists and passionate mentors at reach</h4>
-                            <p>I need to get a certification for English proficiency and MaxCoach is my best choice. Their tutors are smart and professional when dealing with students.</p>
-                            <div class="person-avatar">
-                                <img src="img/testimonial-avata-04.jpg" alt="Testimonial">
-                                <div class="person-description">
-                                    <h4 class="person-name">Madley Pondor</h4>
-                                    <p class="job">/ IT Specialist</p>
+                            <div class="carousel-cell">
+                                <div class="person-review">
+                                    <h4>Professional team of specialists and passionate mentors at reach</h4>
+                                    <p>I need to get a certification for English proficiency and MaxCoach is my best choice. Their tutors are smart and professional when dealing with students.</p>
+                                    <div class="person-avatar">
+                                        <img src="img/testimonial-avata-04.jpg" alt="Testimonial">
+                                        <div class="person-description">
+                                            <h4 class="person-name">Madley Pondor</h4>
+                                            <p class="job">/ IT Specialist</p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="review-circles">
-                            <i class="fas fa-circle"></i>
-                            <i class="fas fa-circle"></i>
-                            <i class="fas fa-circle"></i>
-                            <i class="fas fa-circle"></i>
-                        </div>                     
+                            <div class="carousel-cell">
+                                <div class="person-review">
+                                    <h4>Professional team of specialists and passionate mentors at reach</h4>
+                                    <p>I need to get a certification for English proficiency and MaxCoach is my best choice. Their tutors are smart and professional when dealing with students.</p>
+                                    <div class="person-avatar">
+                                        <img src="img/testimonial-avata-04.jpg" alt="Testimonial">
+                                        <div class="person-description">
+                                            <h4 class="person-name">Madley Pondor</h4>
+                                            <p class="job">/ IT Specialist</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>                                           
                     </div>                    
                 </div>
             </div>
@@ -593,7 +609,8 @@
             </div>
         </footer>
         <!-- /footer -->
-    </div>    
+    </div>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <!-- script -->    
     <script src="js/script.js"></script>
     <!-- /script -->    

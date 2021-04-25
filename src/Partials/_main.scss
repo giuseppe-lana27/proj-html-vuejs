@@ -470,8 +470,7 @@
             transform: rotate(90deg);
             width: 100%;     
             fill: $pricingColor;
-        }
-        
+        }       
     }
     .main-section-title{
         text-align: center;
@@ -485,57 +484,66 @@
         display: flex;
         align-items: center;
         flex-wrap: wrap;
-        .person-review{
-            width: calc((100% / 3) - 30px);            
-            background-color: $pricingColor;
-            margin: 0 15px;
-            padding: 15px;            
-            h4{
-                font-size: 20px;
-                color: $takstitle_color;     
-                margin-bottom: 30px;
-                line-height: 1.5;  
-            }
-            p{
-                color: $paragraph_color;
-                line-height: 1.5;                
-            }
-            .person-avatar{
-                height: 100px;                
+        .carousel{
+            width: 100%;
+            .carousel-cell{
                 display: flex;
-                align-items: center;
-                margin-top: 30px;
-                padding: 15px;
-                img{
-                    height: 70px;
-                    border-radius: 100%;
-                }
-                .person-description{
-                    margin-left: 20px;
-                    .person-name{
-                        font-size: 16px ;
-                        text-transform: uppercase;
-                        color: $navlink-color;
-                        margin: 0;
+                width: calc((100% / 3) - 30px);                   
+                margin-right: 10px;                
+                border-radius: 5px;
+                counter-increment: carousel-cell;
+                .person-review{                             
+                    background-color: $pricingColor;
+                    margin: 0 15px;
+                    padding: 15px;            
+                    h4{
+                        font-size: 20px;
+                        color: $takstitle_color;     
+                        margin-bottom: 30px;
+                        line-height: 1.5;  
                     }
-                    .job{
+                    p{
                         color: $paragraph_color;
-
+                        line-height: 1.5;                
                     }
-                }
-            }   
-        } 
-        .opaque{
-            opacity: 0.5;
-        }
-        .review-circles{   
-            margin: auto;         
-            text-align: center;
-            font-size: 14px;
-            i:not(:last-child){
-                margin-right: 10px;
+                    .person-avatar{
+                        height: 100px;                
+                        display: flex;
+                        align-items: center;
+                        margin-top: 30px;
+                        padding: 15px;
+                        img{
+                            height: 70px;
+                            border-radius: 100%;
+                        }
+                        .person-description{
+                            margin-left: 20px;
+                            .person-name{
+                                font-size: 16px ;
+                                text-transform: uppercase;
+                                color: $navlink-color;
+                                margin: 0;
+                            }
+                            .job{
+                                color: $paragraph_color;
+        
+                            }
+                        }
+                    }   
+                }                 
             }
-        }             
+            .carousel-cell:before {
+                display: block;
+                text-align: center;
+                content: counter(carousel-cell);
+                line-height: 200px;
+                font-size: 80px;
+                color: white;
+              }
+        }
+        .carousel button{
+            display: none;
+        }            
     }
     
 }
